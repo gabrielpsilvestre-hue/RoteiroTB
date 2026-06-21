@@ -6,284 +6,46 @@
   <title>Tuberculose na Radiologia | Roteiro de Aula</title>
   <meta name="description" content="Roteiro de aula sobre tuberculose no adulto, com achados radiológicos, imagens e materiais de acompanhamento." />
   <style>
-    :root{
-      --bg:#0b1020;
-      --bg2:#090d18;
-      --card:rgba(255,255,255,.08);
-      --line:rgba(255,255,255,.12);
-      --text:#f5f7fb;
-      --muted:#b7bfd6;
-      --accent:#7c5cff;
-      --accent2:#24c6b8;
-      --warn:#ffcb6b;
-      --shadow:0 20px 60px rgba(0,0,0,.34);
-      --radius:24px;
-    }
-
+    :root{--bg:#0b1020;--bg2:#090d18;--card:rgba(255,255,255,.08);--line:rgba(255,255,255,.12);--text:#f5f7fb;--muted:#b7bfd6;--warn:#ffcb6b;--shadow:0 20px 60px rgba(0,0,0,.34);--radius:24px;}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text);
-      background:
-        radial-gradient(1100px 700px at 10% 0%, rgba(124,92,255,.20), transparent 55%),
-        radial-gradient(900px 500px at 100% 10%, rgba(36,198,184,.14), transparent 45%),
-        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
-      min-height:100vh;
-    }
-
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:radial-gradient(1100px 700px at 10% 0%, rgba(124,92,255,.20), transparent 55%),radial-gradient(900px 500px at 100% 10%, rgba(36,198,184,.14), transparent 45%),linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);min-height:100vh;}
     a{color:inherit}
     .wrap{max-width:1220px;margin:0 auto;padding:24px}
-    .glass{
-      background:linear-gradient(180deg, var(--card), rgba(255,255,255,.05));
-      border:1px solid var(--line);
-      box-shadow:var(--shadow);
-      backdrop-filter:blur(18px);
-      border-radius:var(--radius);
-    }
-
-    .hero{
-      display:grid;
-      grid-template-columns:1.35fr .95fr;
-      gap:20px;
-      margin-top:8px;
-      align-items:stretch;
-    }
-
-    .hero-main{
-      padding:28px;
-      overflow:hidden;
-      position:relative;
-    }
-
-    .hero-main::after{
-      content:"";
-      position:absolute;
-      inset:auto -60px -80px auto;
-      width:240px;
-      height:240px;
-      border-radius:50%;
-      background:radial-gradient(circle, rgba(124,92,255,.30), transparent 65%);
-      pointer-events:none;
-    }
-
-    .badge-row{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      margin-bottom:16px;
-    }
-
-    .badge{
-      padding:8px 12px;
-      border-radius:999px;
-      background:rgba(255,255,255,.08);
-      border:1px solid var(--line);
-      color:var(--muted);
-      font-size:.88rem;
-    }
-
-    h1{
-      margin:0 0 12px;
-      font-size:clamp(2rem,4vw,3.8rem);
-      line-height:1.02;
-      letter-spacing:-.03em;
-    }
-
-    .lead{
-      margin:0;
-      color:var(--muted);
-      font-size:1.05rem;
-      line-height:1.65;
-      max-width:68ch;
-    }
-
-    .hero-side{
-      padding:22px;
-      display:grid;
-      gap:14px;
-      align-content:start;
-    }
-
-    .stat{
-      padding:16px;
-      border-radius:18px;
-      background:rgba(255,255,255,.06);
-      border:1px solid var(--line);
-    }
-
-    .stat strong{
-      display:block;
-      margin-bottom:4px;
-      font-size:1.05rem;
-    }
-
-    .stat span{
-      display:block;
-      color:var(--muted);
-      line-height:1.55;
-      font-size:.96rem;
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(12,1fr);
-      gap:20px;
-      margin-top:20px;
-    }
-
+    .glass{background:linear-gradient(180deg, var(--card), rgba(255,255,255,.05));border:1px solid var(--line);box-shadow:var(--shadow);backdrop-filter:blur(18px);border-radius:var(--radius);}
+    .hero{display:grid;grid-template-columns:1.35fr .95fr;gap:20px;margin-top:8px;align-items:stretch}
+    .hero-main{padding:28px;overflow:hidden;position:relative}
+    .hero-main::after{content:"";position:absolute;inset:auto -60px -80px auto;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle, rgba(124,92,255,.30), transparent 65%);pointer-events:none}
+    .badge-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px}
+    .badge{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid var(--line);color:var(--muted);font-size:.88rem}
+    h1{margin:0 0 12px;font-size:clamp(2rem,4vw,3.8rem);line-height:1.02;letter-spacing:-.03em}
+    .lead{margin:0;color:var(--muted);font-size:1.05rem;line-height:1.65;max-width:68ch}
+    .hero-side{padding:22px;display:grid;gap:14px;align-content:start}
+    .stat{padding:16px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid var(--line)}
+    .stat strong{display:block;margin-bottom:4px;font-size:1.05rem}
+    .stat span{display:block;color:var(--muted);line-height:1.55;font-size:.96rem}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;margin-top:20px}
     .card{padding:22px}
-    .col-12{grid-column:span 12}
-    .col-7{grid-column:span 7}
-    .col-5{grid-column:span 5}
-
-    h2{
-      margin:0 0 14px;
-      font-size:1.45rem;
-      letter-spacing:-.02em;
-    }
-
-    h3{
-      margin:0 0 10px;
-      font-size:1.08rem;
-    }
-
-    p,li{
-      color:var(--muted);
-      line-height:1.65;
-    }
-
-    ul{margin:0;padding-left:18px}
-    li{margin:8px 0}
-
-    .section-title{
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-end;
-      gap:14px;
-      margin-bottom:14px;
-    }
-
-    .section-title small{
-      color:var(--muted);
-      display:block;
-      margin-top:4px;
-      line-height:1.45;
-    }
-
-    .pill-links{
-      display:flex;
-      flex-wrap:wrap;
-      gap:12px;
-      margin-top:14px;
-    }
-
-    .pill-links a,
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:8px;
-      text-decoration:none;
-      padding:11px 14px;
-      border-radius:14px;
-      background:linear-gradient(135deg, rgba(124,92,255,.26), rgba(36,198,184,.16));
-      border:1px solid rgba(255,255,255,.14);
-      color:var(--text);
-      font-weight:600;
-    }
-
-    .timeline{
-      display:grid;
-      gap:12px;
-    }
-
-    .step{
-      padding:16px;
-      border-radius:18px;
-      background:rgba(255,255,255,.05);
-      border:1px solid var(--line);
-    }
-
-    .step b{color:var(--text)}
-
-    .note{
-      padding:16px;
-      border-left:4px solid var(--warn);
-      background:rgba(255,203,107,.08);
-      border-radius:14px;
-    }
-
-    .table-wrap{
-      overflow-x:auto;
-      border-radius:18px;
-      border:1px solid var(--line);
-    }
-
-    table{
-      width:100%;
-      border-collapse:collapse;
-      min-width:980px;
-      background:rgba(255,255,255,.04);
-    }
-
-    th,td{
-      padding:14px 15px;
-      text-align:center;
-      vertical-align:middle;
-      border-bottom:1px solid var(--line);
-    }
-
-    th{
-      background:rgba(255,255,255,.06);
-      color:var(--text);
-      font-weight:700;
-    }
-
+    .col-12{grid-column:span 12}.col-7{grid-column:span 7}.col-5{grid-column:span 5}
+    h2{margin:0 0 14px;font-size:1.45rem;letter-spacing:-.02em}
+    p,li{color:var(--muted);line-height:1.65}
+    ul{margin:0;padding-left:18px} li{margin:8px 0}
+    .section-title{display:flex;justify-content:space-between;align-items:flex-end;gap:14px;margin-bottom:14px}
+    .section-title small{color:var(--muted);display:block;margin-top:4px;line-height:1.45}
+    .pill-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}
+    .pill-links a,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;padding:11px 14px;border-radius:14px;background:linear-gradient(135deg, rgba(124,92,255,.26), rgba(36,198,184,.16));border:1px solid rgba(255,255,255,.14);color:var(--text);font-weight:600}
+    .note{padding:16px;border-left:4px solid var(--warn);background:rgba(255,203,107,.08);border-radius:14px}
+    .table-wrap{overflow-x:auto;border-radius:18px;border:1px solid var(--line)}
+    table{width:100%;border-collapse:collapse;min-width:980px;background:rgba(255,255,255,.04)}
+    th,td{padding:14px 15px;text-align:center;vertical-align:middle;border-bottom:1px solid var(--line)}
+    th{background:rgba(255,255,255,.06);color:var(--text);font-weight:700}
     td{color:var(--muted)}
-    .imgbox{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      min-height:180px;
-      border-radius:16px;
-      overflow:hidden;
-      background:rgba(255,255,255,.03);
-    }
-
-    .imgbox img{
-      display:block;
-      width:100%;
-      height:auto;
-      max-height:240px;
-      object-fit:contain;
-    }
-
-    .footer{
-      margin:22px 0 10px;
-      text-align:center;
-      color:var(--muted);
-      font-size:.92rem;
-    }
-
-    .floating{
-      position:sticky;
-      bottom:16px;
-      display:flex;
-      justify-content:center;
-      margin-top:20px;
-      pointer-events:none;
-    }
-
+    .imgbox{display:flex;align-items:center;justify-content:center;min-height:180px;border-radius:16px;overflow:hidden;background:rgba(255,255,255,.03)}
+    .imgbox img{display:block;width:100%;height:auto;max-height:240px;object-fit:contain}
+    .footer{margin:22px 0 10px;text-align:center;color:var(--muted);font-size:.92rem}
+    .floating{position:sticky;bottom:16px;display:flex;justify-content:center;margin-top:20px;pointer-events:none}
     .floating .btn{pointer-events:auto}
-
-    @media (max-width: 980px){
-      .hero,.grid{grid-template-columns:1fr}
-      .col-12,.col-7,.col-5{grid-column:span 12}
-      .wrap{padding:16px}
-      table{min-width:760px}
-    }
+    @media (max-width: 980px){.hero,.grid{grid-template-columns:1fr}.col-12,.col-7,.col-5{grid-column:span 12}.wrap{padding:16px}table{min-width:760px}}
   </style>
 </head>
 <body>
@@ -297,36 +59,18 @@
           <span class="badge">Material para alunos</span>
         </div>
         <h1>Tuberculose: principais achados no Raio X</h1>
-        <p class="lead">
-          Página de apoio para a turma de radiologia, estruturada na divisão do roteiro original, com blocos de conteúdo, imagens e materiais para estudo.
-          O objetivo é reconhecer os padrões radiológicos da tuberculose e relacioná-los ao contexto clínico.
-        </p>
+        <p class="lead">Página de apoio para a turma de radiologia, estruturada na divisão do roteiro original, com blocos de conteúdo, imagens e materiais para estudo. O objetivo é reconhecer os padrões radiológicos da tuberculose e relacioná-los ao contexto clínico.</p>
       </article>
-
       <aside class="glass hero-side">
-        <div class="stat">
-          <strong>Uso da imagem</strong>
-          <span>A radiografia de tórax é útil como ferramenta de triagem e acompanhamento.</span>
-        </div>
-        <div class="stat">
-          <strong>Ponto central</strong>
-          <span>Achados de imagem sugerem TB, mas nunca substituem o diagnóstico clínico.</span>
-        </div>
-        <div class="stat">
-          <strong>Quando ampliar</strong>
-          <span>Partir para a tomografia quando a radiografia for inconclusiva em perfil de alto risco.</span>
-        </div>
+        <div class="stat"><strong>Uso da imagem</strong><span>A radiografia de tórax é útil como ferramenta de triagem e acompanhamento.</span></div>
+        <div class="stat"><strong>Ponto central</strong><span>Achados de imagem sugerem TB, mas nunca substituem o diagnóstico clínico.</span></div>
+        <div class="stat"><strong>Quando ampliar</strong><span>Partir para a tomografia quando a radiografia for inconclusiva em perfil de alto risco.</span></div>
       </aside>
     </section>
 
     <section class="grid">
       <article class="glass card col-12">
-        <div class="section-title">
-          <div>
-            <h2>Pontos-chave</h2>
-            <small>Texto mantido conforme a divisão do documento original.</small>
-          </div>
-        </div>
+        <div class="section-title"><div><h2>Pontos-chave</h2><small>Texto mantido conforme a divisão do documento original.</small></div></div>
         <ul>
           <li>No contexto de tuberculose, o Raio X de tórax é útil como ferramenta de triagem e acompanhamento. Possui alta sensibilidade e baixa especificidade.</li>
           <li>Os principais achados na radiografia de TB aguda em imunocompetentes são consolidação em lobo superior e cavitações, sendo estas última altamente específicas para TB. Em paciente imunossuprimidos, podemos observar linfadenopatias, consolidação em lobos inferiores, ou radiografia normal.</li>
@@ -341,98 +85,42 @@
       </article>
 
       <article class="glass card col-12">
-        <div class="section-title">
-          <div>
-            <h2>Tabela de achados radiológicos</h2>
-            <small>Imagens colocadas na célula correspondente.</small>
-          </div>
-        </div>
-
+        <div class="section-title"><div><h2>Tabela de achados radiológicos</h2><small>Imagens colocadas na célula correspondente.</small></div></div>
         <div class="table-wrap">
           <table>
             <thead>
-              <tr>
-                <th>Achado</th>
-                <th>Normal</th>
-                <th>Alterado</th>
-              </tr>
+              <tr><th>Achado</th><th>Normal</th><th>Alterado</th></tr>
             </thead>
             <tbody>
-              <tr>
-                <td><strong>Consolidação</strong></td>
-                <td><div class="imgbox"><img src="./midia/image1.png" alt="Consolidação normal"></div></td>
-                <td><div class="imgbox"><img src="./midia/image2.png" alt="Consolidação alterada"></div></td>
-              </tr>
-              <tr>
-                <td><strong>Cavitação</strong></td>
-                <td><div class="imgbox"><img src="./midia/image3.png" alt="Cavitação normal"></div></td>
-                <td><div class="imgbox"><img src="./midia/image4.png" alt="Cavitação alterada"></div></td>
-              </tr>
-              <tr>
-                <td><strong>Linfadenopatia</strong></td>
-                <td><div class="imgbox"><img src="./midia/image5.png" alt="Linfadenopatia normal"></div></td>
-                <td><div class="imgbox"><img src="./midia/image6.png" alt="Linfadenopatia alterada"></div></td>
-              </tr>
-              <tr>
-                <td><strong>Calcificação</strong></td>
-                <td><div class="imgbox"><img src="./midia/image7.png" alt="Calcificação normal"></div></td>
-                <td><div class="imgbox"><img src="./midia/image8.png" alt="Calcificação alterada"></div></td>
-              </tr>
-              <tr>
-                <td><strong>Cicatrizes</strong></td>
-                <td><div class="imgbox"><img src="./midia/image9.jpeg" alt="Cicatrizes normal"></div></td>
-                <td><div class="imgbox"><img src="./midia/image10.jpeg" alt="Cicatrizes alterado"></div></td>
-              </tr>
-              <tr>
-                <td><strong>Atelectasia</strong></td>
-                <td><div class="imgbox"><img src="./midia/image11.jpeg" alt="Atelectasia normal"></div></td>
-                <td><div class="imgbox"><img src="./midia/image12.jpeg" alt="Atelectasia alterada"></div></td>
-              </tr>
-              <tr>
-                <td><strong>Padrão miliar</strong></td>
-                <td><div class="imgbox"><img src="./midia/image9.jpeg" alt="Padrão miliar normal"></div></td>
-                <td><div class="imgbox"><img src="./midia/image13.jpeg" alt="Padrão miliar alterado"></div></td>
-              </tr>
-              <tr>
-                <td><strong>Complexo de Ranke</strong><br><small>(seta preta)</small></td>
-                <td></td>
-                <td><div class="imgbox"><img src="./midia/image14.png" alt="Complexo de Ranke"></div></td>
-              </tr>
-              <tr>
-                <td><strong>Complexo de Ghon</strong></td>
-                <td></td>
-                <td><div class="imgbox"><img src="./midia/image15.png" alt="Complexo de Ghon"></div></td>
-              </tr>
+              <tr><td><strong>Consolidação</strong></td><td><div class="imgbox"><img src="./midia/image1.png" alt="Consolidação normal"></div></td><td><div class="imgbox"><img src="./midia/image2.png" alt="Consolidação alterada"></div></td></tr>
+              <tr><td><strong>Cavitação</strong></td><td><div class="imgbox"><img src="./midia/image3.png" alt="Cavitação normal"></div></td><td><div class="imgbox"><img src="./midia/image4.png" alt="Cavitação alterada"></div></td></tr>
+              <tr><td><strong>Linfadenopatia</strong></td><td><div class="imgbox"><img src="./midia/image5.png" alt="Linfadenopatia normal"></div></td><td><div class="imgbox"><img src="./midia/image6.png" alt="Linfadenopatia alterada"></div></td></tr>
+              <tr><td><strong>Calcificação</strong></td><td><div class="imgbox"><img src="./midia/image7.png" alt="Calcificação normal"></div></td><td><div class="imgbox"><img src="./midia/image8.png" alt="Calcificação alterada"></div></td></tr>
+              <tr><td><strong>Cicatrizes</strong></td><td><div class="imgbox"><img src="./midia/image9.jpeg" alt="Cicatrizes normal"></div></td><td><div class="imgbox"><img src="./midia/image10.jpeg" alt="Cicatrizes alterado"></div></td></tr>
+              <tr><td><strong>Atelectasia</strong></td><td><div class="imgbox"><img src="./midia/image11.jpeg" alt="Atelectasia normal"></div></td><td><div class="imgbox"><img src="./midia/image12.jpeg" alt="Atelectasia alterada"></div></td></tr>
+              <tr><td><strong>Padrão miliar</strong></td><td><div class="imgbox"><img src="./midia/image13.jpeg" alt="Padrão miliar normal"></div></td><td><div class="imgbox"><img src="./midia/image14.jpeg" alt="Padrão miliar alterado"></div></td></tr>
+              <tr><td><strong>Complexo de Ranke</strong><br><small>(seta preta)</small></td><td></td><td><div class="imgbox"><img src="./midia/image15.jpeg" alt="Complexo de Ranke"></div></td></tr>
+              <tr><td><strong>Complexo de Ghon</strong></td><td></td><td><div class="imgbox"><img src="./midia/image16.jpeg" alt="Complexo de Ghon"></div></td></tr>
             </tbody>
           </table>
         </div>
       </article>
 
       <article class="glass card col-7">
-        <div class="section-title">
-          <div>
-            <h2>Materiais de acompanhamento</h2>
-            <small>Links do roteiro original.</small>
-          </div>
-        </div>
+        <div class="section-title"><div><h2>Materiais de acompanhamento</h2><small>Links do roteiro original.</small></div></div>
         <div class="pill-links">
           <a href="https://radiopaedia.org/articles/tuberculosis?lang=us#article-images" target="_blank" rel="noopener noreferrer">Para se aprofundar</a>
           <a href="https://radiologyassistant.nl/chest/tb/tuberculosis" target="_blank" rel="noopener noreferrer">Para revisar</a>
-          <a href="https://radiopaedia.org/articles/tuberculosis-pulmonary-manifests-1/questions/3593?lang=us" target="_blank" rel="noopener noreferrer">Praticar 1</a>
-          <a href="https://radiopaedia.org/articles/tuberculosis-pulmonary-manifests-1/questions/2205?lang=us" target="_blank" rel="noopener noreferrer">Praticar 2</a>
-          <a href="https://radiopaedia.org/articles/tuberculosis-pulmonary-manifests-1/questions/2203?lang=us" target="_blank" rel="noopener noreferrer">Praticar 3</a>
-          <a href="https://radiopaedia.org/articles/tuberculosis-pulmonary-manifests-1/questions/435?lang=us" target="_blank" rel="noopener noreferrer">Praticar 4</a>
+          <a href="https://radiopaedia.org/articles/tuberculosis-pulmonary-manifestations-1/questions/3593?lang=us" target="_blank" rel="noopener noreferrer">Praticar 1</a>
+          <a href="https://radiopaedia.org/articles/tuberculosis-pulmonary-manifestations-1/questions/2205?lang=us" target="_blank" rel="noopener noreferrer">Praticar 2</a>
+          <a href="https://radiopaedia.org/articles/tuberculosis-pulmonary-manifestations-1/questions/2203?lang=us" target="_blank" rel="noopener noreferrer">Praticar 3</a>
+          <a href="https://radiopaedia.org/articles/tuberculosis-pulmonary-manifestations-1/questions/435?lang=us" target="_blank" rel="noopener noreferrer">Praticar 4</a>
           <a href="https://forms.gle/qmigay1mrybWsADGA" target="_blank" rel="noopener noreferrer">Desafio</a>
         </div>
       </article>
 
       <article class="glass card col-5">
-        <div class="section-title">
-          <div>
-            <h2>Referências</h2>
-            <small>Bloco final do roteiro.</small>
-          </div>
-        </div>
+        <div class="section-title"><div><h2>Referências</h2><small>Bloco final do roteiro.</small></div></div>
         <ol style="margin:0;padding-left:18px;color:var(--muted);line-height:1.65">
           <li>Ravenel J, Chung J, Ackman J. ACR Appropriateness Criteria: Imaging of Possible Tuberculosis. Journal of the American College of Radiology. 14: S160-S165.</li>
           <li>Radiopaedia case: active pulmonary tuberculosis.</li>
@@ -444,18 +132,10 @@
         </ol>
       </article>
 
-      <article class="glass card col-12">
-        <h2>Observação</h2>
-        <div class="note">
-          As imagens usam caminhos relativos no formato <code>./midia/...</code>. Para funcionar no GitHub Pages, o arquivo <code>index.html</code> e a pasta <code>midia</code> precisam ficar no mesmo nível dentro do repositório.
-        </div>
-      </article>
+      <article class="glass card col-12"><h2>Observação</h2><div class="note">As imagens usam caminhos relativos no formato <code>./midia/...</code>. Para funcionar no GitHub Pages, o arquivo <code>index.html</code> e a pasta <code>midia</code> precisam ficar no mesmo nível dentro do repositório.</div></article>
     </section>
 
-    <div class="floating">
-      <a class="btn" href="#top">Voltar ao topo</a>
-    </div>
-
+    <div class="floating"><a class="btn" href="#top">Voltar ao topo</a></div>
     <p class="footer">Arquivo pronto para copiar e publicar.</p>
   </div>
 </body>
